@@ -6,21 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /json-lesson/",
+    "build": "parcel build src/index.html --public-url /8-hw-js/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mykola-davydenko/8-HW-JS.git"
+    "url": "git+https://github.com/mykola-davydenko/8-hw-js.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mykola-davydenko/8-HW-JS/issues"
+    "url": "https://github.com/mykola-davydenko/8-hw-js/issues"
   },
-  "homepage": "https://github.com/mykola-davydenko/8-HW-JS#readme",
+  "homepage": "https://github.com/mykola-davydenko/8-hw-js#readme",
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "parcel": "^2.16.1"

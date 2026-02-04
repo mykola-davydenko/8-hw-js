@@ -46,3 +46,26 @@ if(event.target.classList.contains("delete")){
 
 })
  
+
+
+
+
+
+
+
+
+
+
+
+
+const usernameInput = document.querySelector('#username')
+const passwordInput = document.querySelector('#password')
+const saveBtn = document.querySelector('#saveBtn')
+
+usernameInput.value = localStorage.getItem('username') || ''
+passwordInput.value = localStorage.getItem('password') || ''
+
+saveBtn.addEventListener('click', () => {
+	localStorage.setItem('username', usernameInput.value)
+	localStorage.setItem('password', passwordInput.value)
+})

@@ -744,7 +744,16 @@ list.addEventListener("click", (event)=>{
         renderList(bookmarks);
     }
 });
+const usernameInput = document.querySelector('#username');
+const passwordInput = document.querySelector('#password');
+const saveBtn = document.querySelector('#saveBtn');
+usernameInput.value = localStorage.getItem('username') || '';
+passwordInput.value = localStorage.getItem('password') || '';
+saveBtn.addEventListener('click', ()=>{
+    localStorage.setItem('username', usernameInput.value);
+    localStorage.setItem('password', passwordInput.value);
+});
 
 },{}]},["7wZbQ","2R06K"], "2R06K", "parcelRequire04e2", {})
 
-//# sourceMappingURL=8-HW-JS.0f77c784.js.map
+//# sourceMappingURL=8-hw-js.0f77c784.js.map
